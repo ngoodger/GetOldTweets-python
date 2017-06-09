@@ -1,3 +1,12 @@
+# Get old tweets by topic 
+Added wrapper to allow for getting multiple topics at once and also retrying on failure since I experienced this several times.
+
+#Usage guide
+Set dates and optics in config.ini
+Run python get_topics
+Output for each topic appears as topic_<topic>.
+
+
 # Get Old Tweets Programatically
 A project written in Python to get old tweets, it bypass some limitations of Twitter Official API.
 
