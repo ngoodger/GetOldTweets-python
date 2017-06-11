@@ -52,6 +52,8 @@ def main():
         time0 = start_datetime
         time1 = start_datetime + datetime.timedelta(days=1)
         attempts = retry_attempts
+        for csvwriter in csvwriters:
+            csvwriter.writerow(["date", "text"])
 
         while time1 < end_datetime:
             print("Starting to get tweets")
